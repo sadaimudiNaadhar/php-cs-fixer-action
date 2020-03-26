@@ -1,0 +1,11 @@
+name: PHP CS Fixer
+on: 
+  push:
+    branches: [ <yourbranch> ]
+jobs:
+  cs:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v2
+        - uses: sadaimudiNaadhar/php-cs-fixer-action@master
+  
